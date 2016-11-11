@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="statusName">
+        <item>设备编号</item>
+        <item>软件版本</item>
+        <item>网络运营商代号</item>
+        <item>网络运营商名称</item>
+        <item>手机制式</item>
+        <item>设备当前位置</item>
+        <item>SIM卡的国别</item>
+        <item>SIM卡序列号</item>
+        <item>SIM卡状态</item>
+    </string-array>
+</resources>
