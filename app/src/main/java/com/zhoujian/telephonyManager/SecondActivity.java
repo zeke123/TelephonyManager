@@ -19,7 +19,6 @@ public class SecondActivity extends Activity
 {
     private TelephonyManager mTelephonyManager;
 
-
     public static final String TAG = "SecondActivity";
 
     @Override
