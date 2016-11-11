@@ -23,13 +23,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //注意要加权限
         //<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
         //<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-
-
-
         //获取系统的TelephonyManager
         mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         //获取设备编号
