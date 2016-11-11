@@ -9,7 +9,6 @@ import android.util.Log;
 
 /**
  * Created by zhoujian on 2016/11/11.
- *
  * 监听手机来电
  * 见监听电话状态需要权限
  * <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
@@ -27,6 +26,7 @@ public class SecondActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
         //control+command+g   同时选中
+
         mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 
         PhoneStateListener listener = new PhoneStateListener()
