@@ -2,9 +2,12 @@ package com.zhoujian.telephonyManager;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.CellLocation;
 import android.telephony.TelephonyManager;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
@@ -18,6 +21,7 @@ public class MainActivity extends Activity {
     private String mIso;
     private String mNumber;
     private int mState;
+    private Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,16 @@ public class MainActivity extends Activity {
         mNumber = mTelephonyManager.getSimSerialNumber();
         //获取SIM卡状态
         mState = mTelephonyManager.getSimState();
+
+
+        mButton = (Button) findViewById(R.id.bt_start);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainActivity.this,SecondActivity.class));
+            }
+        });
     }
 
     @Override
